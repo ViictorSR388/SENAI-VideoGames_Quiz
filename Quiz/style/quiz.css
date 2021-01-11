@@ -1,7 +1,6 @@
 body {
-    background-image: url(/imgs/space.jpg);
+    background-color: rgba(0, 0, 0, 0.810);
 }
-
 main {
     display: flex;
     justify-content: center;
