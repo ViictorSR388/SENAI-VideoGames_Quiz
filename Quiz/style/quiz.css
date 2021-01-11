@@ -1,0 +1,48 @@
+body {
+    background-image: url(/imgs/space.jpg);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    color: white;
+    text-align: center;
+    margin: 5%;
+    border-radius: 25px;
+}
+
+img {
+    width: 425px;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    color: white;
+}
+
+h2 {
+    display: flex;
+    margin: 5%;
+}
+
+span {
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
