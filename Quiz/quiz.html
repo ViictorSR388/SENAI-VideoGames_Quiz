@@ -5,148 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card</title>
     <link rel="stylesheet" href="./style/quiz.css">
+    <script src="./script/quiz.js"></script>
 </head>
 <body>
     <header>
         <h1>Quiz de Video-Games!</h1>
     </header>
     <main>
-        <div>
-            <img src="./imgs/ARPG (Dragon's Dogma).jpg" alt="Imagem de um ARPG">
+        <div id="Dragon's Dogma">
+            <img src="./imgs/ARPG (Dragon's Dogma).jpg" alt="">
     
             <h3>A imagem acima pertence a qual jogo?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Dragons Age Inquisition
-            <input type="radio" name="alternativa" value="winter">Dragon's Dogma
-            <input type="radio" name="alternativa" value="winter">Dark Souls <br>
+            <input type="radio" name="alternativa" value="">Dragons Age Inquisition
+            <input type="radio" name="alternativa" value="arpg" id="certa1">Dragon's Dogma
+            <input type="radio" name="alternativa" value="">Dark Souls <br>
             
-            <button onclick="arpg()">RESPONDER</button>
+            <button onclick="verificar1()">RESPONDER</button> <br>
+
+            <span id="acertou1"></span>
         </div>
-        <div>
-            <img src="./imgs/JRPG (Secret of Mana).png" alt="Imagem de um ARPG">
+        <div id="Secret of Mana">
+            <img src="./imgs/JRPG (Secret of Mana).png" alt="">
     
             <h3>A imagem acima pertence a qual jogo?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Chrono Trigger
-            <input type="radio" name="alternativa" value="winter">Illusion of Gaia
-            <input type="radio" name="alternativa" value="winter">Secret of Mana <br>
+            <input type="radio" name="alternativa" value="">Chrono Trigger
+            <input type="radio" name="alternativa" value="">Illusion of Gaia
+            <input type="radio" name="alternativa" value="jrpg" id="certa2">Secret of Mana <br>
             
-            <button onclick="jrpg()">RESPONDER</button>        
+            <button onclick="verificar2()">RESPONDER</button> <br>
+            
+            <span id="acertou2"></span>
         </div>
-        <div>
-            <img src="./imgs/FPS (Killzone).jpg" alt="Imagem de um ARPG">
+        <div id="Killzone">
+            <img src="./imgs/FPS (Killzone).jpg" alt="">
     
             <h3>A imagem acima pertence a qual jogo?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Titanfall
-            <input type="radio" name="alternativa" value="winter">Metro 2033
-            <input type="radio" name="alternativa" value="winter">Killzone Shadow Fall<br>
+            <input type="radio" name="alternativa" value="">Titanfall
+            <input type="radio" name="alternativa" value="">Metro 2033
+            <input type="radio" name="alternativa" value="fps" id="certa3">Killzone Shadow Fall<br>
             
-            <button onclick="fps()">RESPONDER</button>            
+            <button onclick="verificar3()">RESPONDER</button> <br>
+            
+            <span id="acertou3"></span>
         </div>
-        <div>
-            <img src="./imgs/RACE (Project Cars).jpg" alt="Imagem de um ARPG">
+        <div id="Project Cars">
+            <img src="./imgs/RACE (Project Cars).jpg" alt="">
     
             <h3>A imagem acima pertence a qual jogo?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Project Cars
-            <input type="radio" name="alternativa" value="winter">Forza Motorsport 6
-            <input type="radio" name="alternativa" value="winter">Gran Turismo Sport<br>
+            <input type="radio" name="alternativa" value="race" id="certa4">Project Cars
+            <input type="radio" name="alternativa" value="">Forza Motorsport 6
+            <input type="radio" name="alternativa" value="">Gran Turismo Sport<br>
             
-            <button onclick="race()">RESPONDER</button>
+            <button onclick="verificar4()">RESPONDER</button> <br>
+
+            <span id="acertou4"></span>
         </div>
-        <div>
-            <img src="./imgs/FIGHT (Guilty Gear Xrd Revelator).jpg" alt="Imagem de um ARPG">
+        <div id="Guilty Gear Xrd Revelator">
+            <img src="./imgs/FIGHT (Guilty Gear Xrd Revelator).jpg" alt="">
     
             <h3>A imagem acima pertence a qual jogo?</h3>
     
-            <input type="radio" name="alternativa" value="winter">BlazBlue: Central Fiction
-            <input type="radio" name="alternativa" value="winter">Guilty Gear XrdR
-            <input type="radio" name="alternativa" value="winter">Persona 4 Arena <br>
+            <input type="radio" name="alternativa" value="">BlazBlue: Central Fiction
+            <input type="radio" name="alternativa" value="fight" id="certa5">Guilty Gear XrdR
+            <input type="radio" name="alternativa" value="">Persona 4 Arena <br>
             
-            <button onclick="fight()">RESPONDER</button>
+            <button onclick="verificar5()">RESPONDER</button> <br>
+
+            <span id="acertou5"></span>
         </div>
-        <div>
-            <img src="./imgs/SANDBOX (Sleeping Dogs).jpg" alt="Imagem de um ARPG">
+        <div id="Sleeping Dogs">
+            <img src="./imgs/SANDBOX (Sleeping Dogs).jpg" alt="">
     
             <h3>A imagem acima pertence a qual jogo?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Yakuza 6
-            <input type="radio" name="alternativa" value="winter">Sleeping Dogs
-            <input type="radio" name="alternativa" value="winter">Mafia III<br>
+            <input type="radio" name="alternativa" value="">Yakuza 6
+            <input type="radio" name="alternativa" value="sandbox" id="certa6">Sleeping Dogs
+            <input type="radio" name="alternativa" value="">Mafia III<br>
             
-            <button onclick="sandbox()">RESPONDER</button>
+            <button onclick="verificar6()">RESPONDER</button> <br>
+
+            <span id="acertou6"></span>
         </div>
         <div>
             <img src="./imgs/NINTENDO (Metroid).png" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Nintendo
-            <input type="radio" name="alternativa" value="winter">Sony (Playstation)
-            <input type="radio" name="alternativa" value="winter">Microsoft (Xbox)<br>
+            <input type="radio" name="alternativa" value="metroid" id="certa7">Nintendo
+            <input type="radio" name="alternativa" value="">Sony (Playstation)
+            <input type="radio" name="alternativa" value="">Microsoft (Xbox)<br>
             
-            <button onclick="metroid()">RESPONDER</button>
+            <button onclick="verificar7()">RESPONDER</button> <br>
+
+            <span id="acertou7"></span>
         </div>
         <div>
             <img src="./imgs/PLAYSTATION (InFamous).jpg" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Nintendo
-            <input type="radio" name="alternativa" value="winter">Sony (Playstation)
-            <input type="radio" name="alternativa" value="winter">Microsoft (Xbox)<br>
+            <input type="radio" name="alternativa" value="">Nintendo
+            <input type="radio" name="alternativa" value="infamous" id="certa8">Sony (Playstation)
+            <input type="radio" name="alternativa" value="">Microsoft (Xbox)<br>
             
-            <button onclick="infamous()">RESPONDER</button>
+            <button onclick="verificar8()">RESPONDER</button> <br>
+
+            <span id="acertou8"></span>
         </div>
         <div>
             <img src="./imgs/NINTENDO (F-Zero).png" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Nintendo
-            <input type="radio" name="alternativa" value="winter">Sony (Playstation)
-            <input type="radio" name="alternativa" value="winter">Microsoft (Xbox)<br>
+            <input type="radio" name="alternativa" value="fzero" id="certa9">Nintendo
+            <input type="radio" name="alternativa" value="">Sony (Playstation)
+            <input type="radio" name="alternativa" value="">Microsoft (Xbox)<br>
             
-            <button onclick="fzero()">RESPONDER</button>
+            <button onclick="verificar9()">RESPONDER</button> <br>
+
+            <span id="acertou9"></span>
         </div>
         <div>
             <img src="./imgs/XBOX (Ori & The Blind Forest).jpg" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Nintendo
-            <input type="radio" name="alternativa" value="winter">Sony (Playstation)
-            <input type="radio" name="alternativa" value="winter">Microsoft (Xbox)<br>
+            <input type="radio" name="alternativa" value="">Nintendo
+            <input type="radio" name="alternativa" value="">Sony (Playstation)
+            <input type="radio" name="alternativa" value="ori" id="certa10">Microsoft (Xbox)<br>
             
-            <button onclick="ori()">RESPONDER</button>
+            <button onclick="verificar10()">RESPONDER</button> <br>
+
+            <span id="acertou10"></span>
         </div>
         <div>
             <img src="./imgs/XBOX (Fable).jpg" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Nintendo
-            <input type="radio" name="alternativa" value="winter">Sony (Playstation)
-            <input type="radio" name="alternativa" value="winter">Microsoft (Xbox)<br>
+            <input type="radio" name="alternativa" value="">Nintendo
+            <input type="radio" name="alternativa" value="">Sony (Playstation)
+            <input type="radio" name="alternativa" value="fable" id="certa11">Microsoft (Xbox)<br>
             
-            <button onclick="fable()">RESPONDER</button>
+            <button onclick="verificar11()">RESPONDER</button> <br>
+
+            <span id="acertou11"></span>
         </div>
         <div>
             <img src="./imgs/PLAYSTATION (Journey).jpg" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
     
-            <input type="radio" name="alternativa" value="winter">Nintendo
-            <input type="radio" name="alternativa" value="winter">Sony (Playstation)
-            <input type="radio" name="alternativa" value="winter">Microsoft (Xbox)<br>
+            <input type="radio" name="alternativa" value="">Nintendo
+            <input type="radio" name="alternativa" value="journey" id="certa12">Sony (Playstation)
+            <input type="radio" name="alternativa" value="">Microsoft (Xbox)<br>
             
-            <button onclick="journey()">RESPONDER</button>
+            <button onclick="verificar12()">RESPONDER</button> <br>
+
+            <span id="acertou12"></span>
         </div>
     </main>
     <footer>
-        <h2>Record Atual: </h2><span></span>
-        <h2>Pontuação Atual: </h2><span></span>
+        <button onclick="record()" id="botãoDePontos">Record Atual</button> <br>
+        <span id="spanRecord"></span>
+        <button onclick="atual()" id="botãoDePontos">Pontuação Atual</button> <br>
+        <span id="spanAtual"></span>
     </footer>
 </body>
 </html>

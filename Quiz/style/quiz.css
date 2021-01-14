@@ -1,6 +1,9 @@
 body {
     background-color: rgba(0, 0, 0, 0.810);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -31,7 +34,7 @@ h1 {
     color: white;
 }
 
-h2 {
+#botãoDePontos {
     display: flex;
     margin: 5%;
 }
@@ -44,4 +47,8 @@ footer {
     display: flex;
     justify-content: center;
     color: white;
+}
+
+#spanAtual {
+    background-color: red;
 }
