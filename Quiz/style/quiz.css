@@ -1,7 +1,7 @@
 body {
     /* background-image: url(./imgs/space.jpg); */
     background-color: rgba(0, 0, 0, 0.870);
-    font-family: cursive;
+    font-family: monospace;
     font-size: 14px;
 }
 
@@ -29,7 +29,7 @@ button {
     margin-bottom: 15px;
     width: 100px;
     border-radius: 25px;
-    font-family: cursive;
+    font-family: monospace;
     font-style: italic;
 
 }
