@@ -1,3 +1,9 @@
+var nick = prompt("Insira seu nick: ")
+
+// let nick = username
+
+// localStorage.setItem(username)
+
 var pontoAtual = 1
 
 function verificar1() {
@@ -152,4 +158,46 @@ function refresh() {
 
 function scrolltop() {
     window.scrollTo(0,0)
+}
+
+var rankingNickJSON = {
+    primeiro: "AAA",
+    segundo: "BBB",
+    terceiro: "CCC"
+}
+
+var rankingPontoJSON = {
+    ponto1: 11,
+    ponto2: 6,
+    ponto3: 0
+}
+
+function gravarRanking() {
+    if (pontoAtual >= rankingPontoJSON.ponto1) {
+        rankingNickJSON.primeiro = nick
+        rankingPontoJSON.ponto1 = pontoAtual
+    } else if (pontoAtual < rankingPontoJSON.ponto1) {
+        rankingNickJSON.segundo = nick
+        rankingPontoJSON.ponto2 = pontoAtual
+    } else if (pontoAtual < rankingPontoJSON.ponto2) {
+        rankingNickJSON.terceiro = nick
+        rankingPontoJSON.ponto3 = pontoAtual
+    }
+
+    document.getElementById("ranking").innerHTML = `
+    <tbody>
+        <tr>
+            <th>Chave</th><th>Nick</th><th>Score</th>
+        </tr>
+        <tr>
+            <td>Primeiro</td><td>${rankingNickJSON.primeiro}</td><td>${rankingPontoJSON.ponto1}</td>
+        </tr>
+        <tr>
+            <td>Segundo</td><td>${rankingNickJSON.segundo}</td><td>${rankingPontoJSON.ponto2}</td>
+        </tr>
+        <tr>
+            <td>Terceiro</td><td>${rankingNickJSON.terceiro}</td><td>${rankingPontoJSON.ponto3}</td>
+        </tr>
+    </tbody>
+    `
 }

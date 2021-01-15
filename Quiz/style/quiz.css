@@ -71,9 +71,12 @@ span {
     margin-top: 1%;
 }
 
-#recorde {
-    margin-bottom: 5%;
-    
+#gravarRecorde {
+    margin-left: 4%;
+}
+
+#ranking {
+    font-size: 175%;
 }
 
 #spanAtual {

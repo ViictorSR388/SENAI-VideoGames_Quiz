@@ -173,8 +173,23 @@
         </div>
     </main>
     <div id="footer">
-        <h1 id="recorde">Recorde</h1>
-        <span id="spanRecorde"></span>
+        <table id="ranking">
+            <tbody>
+                <tr>
+                    <th>Lugar</th><th>Valor</th><th>Score</th>
+                </tr>
+                <tr>
+                    <td>Primeiro</td><td>AAA</td><td>000</td>
+                </tr>
+                <tr>
+                    <td>Segundo</td><td>BBB</td><td>000</td>
+                </tr>
+                <tr>
+                    <td>Terceiro</td><td>CCC</td><td>000</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="gravarRanking()" id="gravarRecorde">Gravar Pontuação Atual</button>
         <img src="./imgs/voltar-ao-topo.png" alt="" onclick="scrolltop()" id="scrolltop">
     </div>
 </body>
