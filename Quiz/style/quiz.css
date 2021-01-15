@@ -1,7 +1,8 @@
 body {
-    background-color: rgba(0, 0, 0, 0.810);
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: small;
+    background-image: url(/imgs/space.jpg);
+    /* background-color: rgba(0, 0, 0, 0.870); */
+    font-family: cursive;
+    font-size: 14px;
 }
 
 main {
@@ -19,12 +20,18 @@ div {
 
 img {
     width: 425px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px white;
 }
 
 button {
     margin-top: 15px;
     margin-bottom: 15px;
     width: 100px;
+    border-radius: 25px;
+    font-family: cursive;
+    font-style: italic;
+
 }
 
 h1 {
@@ -32,23 +39,26 @@ h1 {
     justify-content: center;
     margin-top: 3%;
     color: white;
-}
-
-#botãoDePontos {
-    display: flex;
-    margin: 5%;
+    font-style: italic;
 }
 
 span {
+    font-size: large;
     color: white;
 }
 
-footer {
+#footer {
     display: flex;
     justify-content: center;
     color: white;
 }
 
+#recorde {
+    margin-bottom: 5%;
+}
+
 #spanAtual {
-    background-color: red;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
 }

@@ -1,4 +1,4 @@
-var pontoAtual = 0
+var pontoAtual = 1
 
 function verificar1() {
     
@@ -6,6 +6,7 @@ function verificar1() {
 
     if (resposta1 == true) {
         document.getElementById("acertou1").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou1").textContent = `Errou`
@@ -17,6 +18,7 @@ function verificar2() {
     
     if (resposta2 == true) {
         document.getElementById("acertou2").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou2").textContent = `Errou`
@@ -28,6 +30,7 @@ function verificar3() {
     
     if (resposta3 == true) {
         document.getElementById("acertou3").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou3").textContent = `Errou`
@@ -39,6 +42,7 @@ function verificar4() {
     
     if (resposta4 == true) {
         document.getElementById("acertou4").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou4").textContent = `Errou`
@@ -50,6 +54,7 @@ function verificar5() {
     
     if (resposta5 == true) {
         document.getElementById("acertou5").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou5").textContent = `Errou`
@@ -61,6 +66,7 @@ function verificar6() {
     
     if (resposta6 == true) {
         document.getElementById("acertou6").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou6").textContent = `Errou`
@@ -72,6 +78,7 @@ function verificar7() {
     
     if (resposta7 == true) {
         document.getElementById("acertou7").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou7").textContent = `Errou`
@@ -83,6 +90,7 @@ function verificar8() {
     
     if (resposta8 == true) {
         document.getElementById("acertou8").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou8").textContent = `Errou`
@@ -94,6 +102,7 @@ function verificar9() {
     
     if (resposta9 == true) {
         document.getElementById("acertou9").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou9").textContent = `Errou`
@@ -105,6 +114,7 @@ function verificar10() {
     
     if (resposta10 == true) {
         document.getElementById("acertou10").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou10").textContent = `Errou`
@@ -116,6 +126,7 @@ function verificar11() {
     
     if (resposta11 == true) {
         document.getElementById("acertou11").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou11").textContent = `Errou`
@@ -127,12 +138,9 @@ function verificar12() {
     
     if (resposta12 == true) {
         document.getElementById("acertou12").textContent = `Acertou`
+        document.getElementById("spanAtual").textContent = pontoAtual + "/12"
         pontoAtual = pontoAtual + 1
     } else {
         document.getElementById("acertou12").textContent = `Errou`
     }
-}
-
-function atual() {
-    alert("Você acertou " + pontoAtual + "/12 perguntas")
 }
