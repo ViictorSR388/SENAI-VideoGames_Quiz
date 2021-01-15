@@ -1,0 +1,64 @@
+body {
+    background-image: url(../imgs/space.jpg);
+    /* background-color: rgba(0, 0, 0, 0.870); */
+    font-family: monospace;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    color: white;
+    text-align: center;
+    margin: 5%;
+    border-radius: 25px;
+}
+
+img {
+    width: 425px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px white;
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+    border-radius: 25px;
+    font-family: monospace;
+    font-style: italic;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    color: white;
+    font-style: italic;
+}
+
+span {
+    font-size: large;
+    color: white;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#recorde {
+    margin-bottom: 5%;
+}
+
+#spanAtual {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
