@@ -144,3 +144,12 @@ function verificar12() {
         document.getElementById("acertou12").textContent = `Errou`
     }
 }
+
+function refresh() {
+    window.location.reload()
+    window.scrollTo(0,0)
+}
+
+function scrolltop() {
+    window.scrollTo(0,0)
+}

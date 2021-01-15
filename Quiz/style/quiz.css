@@ -5,6 +5,12 @@ body {
     font-size: small;
 }
 
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 7%;
+}
+
 main {
     display: flex;
     justify-content: center;
@@ -25,13 +31,17 @@ img {
 }
 
 button {
+    border-radius: 25px;
+    font-family: monospace;
     margin-top: 15px;
     margin-bottom: 15px;
     width: 100px;
-    border-radius: 25px;
-    font-family: monospace;
-    font-style: italic;
+}
 
+#refresh {
+    height: 40px;
+    margin-top: 3%;
+    /* margin-top: 45px; */
 }
 
 h1 {
@@ -47,18 +57,28 @@ span {
     color: white;
 }
 
+
 #footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     color: white;
+}
+
+#scrolltop {
+    box-shadow: none;
+    width: 15%;
+    height: 15%;
+    margin-top: 1%;
 }
 
 #recorde {
     margin-bottom: 5%;
+    
 }
 
 #spanAtual {
     display: flex;
     justify-content: center;
     font-size: x-large;
+    margin-top: 1%;
 }

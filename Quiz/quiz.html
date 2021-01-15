@@ -11,12 +11,13 @@
     <header>
         <h1>Quiz de Video-Games</h1>
         <h1>Pontuação Atual</h1>
-        <span id="spanAtual"></span>
+        <button onclick="refresh()" id="refresh">Tentar Novamente</button>
     </header>
+    <span id="spanAtual"></span>
     <main>
         <div id="Dragon's Dogma">
             <img src="./imgs/ARPG (Dragon's Dogma).jpg" alt="">
-    
+            
             <h3>A imagem acima pertence a qual jogo?</h3>
     
             <input type="radio" name="alternativa" value="">Dragons Age Inquisition
@@ -24,7 +25,7 @@
             <input type="radio" name="alternativa" value="">Dark Souls <br>
             
             <button onclick="verificar1()">RESPONDER</button> <br>
-
+            
             <span id="acertou1"></span>
         </div>
         <div id="Secret of Mana">
@@ -42,9 +43,9 @@
         </div>
         <div id="Killzone">
             <img src="./imgs/FPS (Killzone).jpg" alt="">
-    
+            
             <h3>A imagem acima pertence a qual jogo?</h3>
-    
+            
             <input type="radio" name="alternativa" value="">Titanfall
             <input type="radio" name="alternativa" value="">Metro 2033
             <input type="radio" name="alternativa" value="fps" id="certa3">Killzone Shadow Fall<br>
@@ -57,20 +58,20 @@
             <img src="./imgs/RACE (Project Cars).jpg" alt="">
     
             <h3>A imagem acima pertence a qual jogo?</h3>
-    
+            
             <input type="radio" name="alternativa" value="race" id="certa4">Project Cars
             <input type="radio" name="alternativa" value="">Forza Motorsport 6
             <input type="radio" name="alternativa" value="">Gran Turismo Sport<br>
             
             <button onclick="verificar4()">RESPONDER</button> <br>
-
+            
             <span id="acertou4"></span>
         </div>
         <div id="Guilty Gear Xrd Revelator">
             <img src="./imgs/FIGHT (Guilty Gear Xrd Revelator).jpg" alt="">
-    
+            
             <h3>A imagem acima pertence a qual jogo?</h3>
-    
+            
             <input type="radio" name="alternativa" value="">BlazBlue: Central Fiction
             <input type="radio" name="alternativa" value="fight" id="certa5">Guilty Gear XrdR
             <input type="radio" name="alternativa" value="">Persona 4 Arena <br>
@@ -96,20 +97,20 @@
             <img src="./imgs/NINTENDO (Metroid).png" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
-    
+            
             <input type="radio" name="alternativa" value="metroid" id="certa7">Nintendo
             <input type="radio" name="alternativa" value="">Sony (Playstation)
             <input type="radio" name="alternativa" value="">Microsoft (Xbox)<br>
             
             <button onclick="verificar7()">RESPONDER</button> <br>
-
+            
             <span id="acertou7"></span>
         </div>
         <div>
             <img src="./imgs/PLAYSTATION (InFamous).jpg" alt="">
-    
+            
             <h3>O jogo acima foi publicado por qual empresa?</h3>
-    
+            
             <input type="radio" name="alternativa" value="">Nintendo
             <input type="radio" name="alternativa" value="infamous" id="certa8">Sony (Playstation)
             <input type="radio" name="alternativa" value="">Microsoft (Xbox)<br>
@@ -128,27 +129,27 @@
             <input type="radio" name="alternativa" value="">Microsoft (Xbox)<br>
             
             <button onclick="verificar9()">RESPONDER</button> <br>
-
+            
             <span id="acertou9"></span>
         </div>
         <div>
             <img src="./imgs/XBOX (Ori & The Blind Forest).jpg" alt="">
     
             <h3>O jogo acima foi publicado por qual empresa?</h3>
-    
+            
             <input type="radio" name="alternativa" value="">Nintendo
             <input type="radio" name="alternativa" value="">Sony (Playstation)
             <input type="radio" name="alternativa" value="ori" id="certa10">Microsoft (Xbox)<br>
             
             <button onclick="verificar10()">RESPONDER</button> <br>
-
+            
             <span id="acertou10"></span>
         </div>
         <div>
             <img src="./imgs/XBOX (Fable).jpg" alt="">
-    
+            
             <h3>O jogo acima foi publicado por qual empresa?</h3>
-    
+            
             <input type="radio" name="alternativa" value="">Nintendo
             <input type="radio" name="alternativa" value="">Sony (Playstation)
             <input type="radio" name="alternativa" value="fable" id="certa11">Microsoft (Xbox)<br>
@@ -174,6 +175,7 @@
     <div id="footer">
         <h1 id="recorde">Recorde</h1>
         <span id="spanRecorde"></span>
+        <img src="./imgs/voltar-ao-topo.png" alt="" onclick="scrolltop()" id="scrolltop">
     </div>
 </body>
 </html>
