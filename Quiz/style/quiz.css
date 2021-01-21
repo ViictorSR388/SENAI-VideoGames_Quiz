@@ -72,7 +72,7 @@ span {
 }
 
 #gravarRecorde {
-    margin-left: 4%;
+    margin-left: 2%;
 }
 
 #ranking {
@@ -84,4 +84,15 @@ span {
     justify-content: center;
     font-size: x-large;
     margin-top: 1%;
+}
+
+#spanRecorde {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin-top: 1%;
+}
+
+#recorde {
+    margin-bottom: 5%;
 }

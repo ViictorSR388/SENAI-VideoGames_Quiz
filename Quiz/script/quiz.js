@@ -1,5 +1,3 @@
-var nick = prompt("Insira seu nick: ")
-
 // let nick = username
 
 // localStorage.setItem(username)
@@ -167,21 +165,27 @@ var rankingNickJSON = {
 }
 
 var rankingPontoJSON = {
-    ponto1: 11,
+    ponto1: 12,
     ponto2: 6,
     ponto3: 0
 }
 
 function gravarRanking() {
+    let nick = prompt("Insira seu nick: ")
+    let pontoFinal = pontoAtual
+
+    localStorage.setItem(nick, nick)
+    localStorage.setItem(pontoFinal, pontoFinal)
+
     if (pontoAtual >= rankingPontoJSON.ponto1) {
         rankingNickJSON.primeiro = nick
-        rankingPontoJSON.ponto1 = pontoAtual
+        rankingPontoJSON.ponto1 = pontoAtual - 1
     } else if (pontoAtual < rankingPontoJSON.ponto1) {
         rankingNickJSON.segundo = nick
-        rankingPontoJSON.ponto2 = pontoAtual
+        rankingPontoJSON.ponto2 = pontoAtual - 1
     } else if (pontoAtual < rankingPontoJSON.ponto2) {
         rankingNickJSON.terceiro = nick
-        rankingPontoJSON.ponto3 = pontoAtual
+        rankingPontoJSON.ponto3 = pontoAtual - 1
     }
 
     document.getElementById("ranking").innerHTML = `
@@ -200,4 +204,7 @@ function gravarRanking() {
         </tr>
     </tbody>
     `
+
+    // document.getElementById("spanRecorde").textContent = localStorage.getItem("pontoFinal")
+    document.getElementById("spanRecorde").textContent = pontoFinal - 1
 }
