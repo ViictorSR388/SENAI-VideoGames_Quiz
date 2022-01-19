@@ -1,11 +1,5 @@
 # QuizGames
 
-|
- |
- |
- |
-| --- | --- | --- |
-
 # **Regras Para Jogar o Quiz**
 
 **Por: Victor Eduardo Pereira Gois**
